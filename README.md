@@ -6,8 +6,13 @@ A simple and fast Douyin video downloader. Get high-quality, watermark-free vide
 
 ---
 
-## 安装 (Installation)
+## 安装方式 (Installation)
 
+### 方式一：通过 OpenClaw 直接安装 (Directly via OpenClaw)
+你可以直接在聊天对话框中向你的 OpenClaw 发送以下指令：
+> “帮我安装这个技能：`https://github.com/<your-username>/douyin-downloader`”
+
+### 方式二：通过命令行安装 (Via CLI)
 ```bash
 npx skills add <your-username>/douyin-downloader
 ```
