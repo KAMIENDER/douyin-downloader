@@ -1,8 +1,8 @@
 # 抖音视频下载器 (Douyin Downloader)
 
-这是一个专为 OpenClaw 设计的抖音视频下载工具。它利用 Playwright 深度模拟浏览器行为，能够稳定绕过反爬和 WAF 挑战，一键获取并下载抖音无水印原画视频。无论是用于素材采集、数据分析还是 AI 诊断，它都是你的得力助手。
+简单、快速的抖音无水印视频下载工具。只需提供视频链接，即可一键保存高清原片。
 
-A specialized Douyin video downloader for OpenClaw, utilizing Playwright to simulate browser behavior and reliably bypass anti-bot and WAF challenges. Get watermark-free, high-quality videos with a single command—perfect for content collection or AI analysis.
+A simple and fast Douyin video downloader. Get high-quality, watermark-free videos with just a link.
 
 ---
 
@@ -12,20 +12,15 @@ A specialized Douyin video downloader for OpenClaw, utilizing Playwright to simu
 npx skills add <your-username>/douyin-downloader
 ```
 
-## 功能特性 (Features)
+## 功能 (Features)
 
-- **无水印下载**: 自动解析并获取抖音无水印原画视频链接。
-- **强力绕过**: 使用 Playwright 模拟真实浏览器行为，有效应对 WAF 验证。
-- **异步处理**: 基于 Python 异步 IO，下载过程高效流畅。
-- **简单易用**: 支持命令行调用，可轻松集成到其他自动化流程中。
+- **无水印**: 下载最清晰的无水印原视频。
+- **一键下载**: 输入链接即可自动保存。
+- **简单稳定**: 专注下载，无多余配置。
 
-## 依赖要求 (Dependencies)
+## 环境准备 (Setup)
 
-- Python 3.10+
-- Playwright
-- aiohttp
-
-请确保已安装必要的依赖：
+运行前请确保安装以下必要组件：
 
 ```bash
 pip install playwright aiohttp
@@ -34,13 +29,13 @@ playwright install chromium
 
 ## 使用方法 (Usage)
 
-直接运行下载脚本并提供视频链接：
+在终端输入以下命令：
 
 ```bash
-python .agent/skills/douyin-downloader/scripts/download_video.py "https://v.douyin.com/xxx/"
+python .agent/skills/douyin-downloader/scripts/download_video.py "视频链接"
 ```
 
-指定输出路径：
+如需指定保存位置：
 
 ```bash
 python .agent/skills/douyin-downloader/scripts/download_video.py "视频链接" --output /path/to/save.mp4
